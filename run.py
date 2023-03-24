@@ -135,8 +135,8 @@ def main(trader):
         sleep(1)
 
     # wait until endtime is reached
-    # while trader.get_last_trade_time() < end_time:
-    #     sleep(check_frequency)
+    while trader.get_last_trade_time() < end_time:
+        sleep(check_frequency)
 
     # wait for all threads to finish
     for thread in threads:
